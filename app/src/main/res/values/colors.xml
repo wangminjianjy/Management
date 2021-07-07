@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00C75E</color>
+    <color name="colorPrimaryDark">#009F4B</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorBgWhite">#FFFFFF</color>
+    <color name="colorBgWindow">#F4F4F4</color>
+    <color name="colorBgGray">#F2F2F2</color>
+
+    <color name="colorNormal">#009F4B</color>
+
+    <color name="colorBlack">#000000</color>
+    <color name="colorTextRed">#FF0000</color>
+    <color name="colorTextBlack">#333333</color>
+    <color name="colorTextBlack1">#1B1B1B</color>
+    <color name="colorTextGray">#666666</color>
+    <color name="colorTextGray1">#999999</color>
+    <color name="colorTextGray2">#AAAAAA</color>
+    <color name="colorTextGray3">#E6E6E6</color>
+    <color name="colorTextGray4">#FAFAFA</color>
+    <color name="colorTextWhite">#FFFFFF</color>
+    <color name="colorTextToolBar">#FFFFFF</color>
+    <color name="colorInputHint">#878787</color>
+    <color name="colorBgToolBar">#3F51B5</color>
+
+    <color name="colorBtn1">#E04545</color>
+    <color name="colorBtn2">#E05741</color>
+    <color name="colorDialogBtn">#999999</color>
+    <color name="colorBtn">#46BF8B</color>
+    <color name="colorAlarm">#FD0717</color>
+
+    <color name="colorDivider">#EEEEEE</color>
+    <color name="colorDividerDark">#CCCCCC</color>
+    <color name="colorDividerDark1">#DDDDDD</color>
+    <color name="colorDividerDark2">#6DCECBCB</color>
+
+    <color name="colorNull">#00000000</color>
+    <color name="colorBottomDate">#FCFCFC</color>
+    <color name="color_blue_sea">#2E50B6</color>
+    <color name="color_blue_sky">#2EC8CA</color>
+    <color name="color_green_soft">#DAF2E8</color>
+    <color name="color_gray_soft">#EEEEEE</color>
+    <color name="color_purple_soft">#B6A2DF</color>
+    <color name="color_orange_light">#FFCC00</color>
+    <color name="color_red_soft">#D33802</color>
+    <color name="color_red_light">#F0F7926E</color>
+    <color name="colorSubTitleBar">#F9F9F9</color>
+    <color name="colorQrCodeScan">#FAE0E0</color>
+    <color name="colorQualityCheck">#E8FFF3</color>
+    <color name="colorQualityCheck1">#00A9E1</color>
+    <color name="colorQualityCheck2">#00D463</color>
+    <color name="colorQualityCheck3">#FF9C00</color>
+
+    <!--半透明白色-->
+    <color name="color_half_white">#60FFFFFF</color>
+    <!--半透明色-->
+    <color name="color_half_null">#60000000</color>
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWindow"
+    android:orientation="vertical"
+    tools:context=".ui.login.IpActivity">
+
+    <include layout="@layout/toolbar_custom_simple" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/view_height_20"
+        android:background="@color/colorBgWhite"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/view_height_6"
+        android:paddingRight="@dimen/view_height_6">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:padding="@dimen/view_height_5"
+            android:text="@string/ip_set_address" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_ip_1"
+                style="@style/style_edit_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:background="@null"
+                android:gravity="center"
+                android:imeActionId="@+id/et_ip_2"
+                android:imeActionLabel="@string/action_next"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/view_height_12"
+                android:paddingTop="@dimen/view_height_12"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingLeft="@dimen/view_height_4"
+                android:paddingRight="@dimen/view_height_4"
+                android:text="@string/ip_set_point"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_ip_2"
+                style="@style/style_edit_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:background="@null"
+                android:gravity="center"
+                android:imeActionId="@+id/et_ip_3"
+                android:imeActionLabel="@string/action_next"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/view_height_12"
+                android:paddingTop="@dimen/view_height_12"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingLeft="@dimen/view_height_4"
+                android:paddingRight="@dimen/view_height_4"
+                android:text="@string/ip_set_point"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_ip_3"
+                style="@style/style_edit_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:background="@null"
+                android:gravity="center"
+                android:imeActionId="@+id/et_ip_4"
+                android:imeActionLabel="@string/action_next"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/view_height_12"
+                android:paddingTop="@dimen/view_height_12"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:paddingLeft="@dimen/view_height_4"
+                android:paddingRight="@dimen/view_height_4"
+                android:text="@string/ip_set_point"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_ip_4"
+                style="@style/style_edit_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:background="@null"
+                android:gravity="center"
+                android:imeActionId="@+id/et_ip_port"
+                android:imeActionLabel="@string/action_next"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/view_height_12"
+                android:paddingTop="@dimen/view_height_12"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/view_height_4"
+                android:paddingRight="@dimen/view_height_4"
+                android:text="@string/ip_set_colon"
+                android:textSize="@dimen/text_size_20"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/et_ip_port"
+                style="@style/style_edit_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:background="@null"
+                android:gravity="center"
+                android:imeActionId="@+id/btn_config"
+                android:imeActionLabel="@string/action_next"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="5"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/view_height_12"
+                android:paddingTop="@dimen/view_height_12"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

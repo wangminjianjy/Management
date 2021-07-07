@@ -1,0 +1,283 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWindow"
+    android:orientation="vertical"
+    tools:context=".ui.main.PersonFragment">
+
+    <include layout="@layout/toolbar_custom_simple" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBgWhite"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/view_height_15"
+                android:paddingTop="@dimen/view_height_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/person_card"
+                        android:drawablePadding="@dimen/view_height_10"
+                        android:paddingBottom="@dimen/view_height_10"
+                        android:paddingTop="@dimen/view_height_10"
+                        android:text="@string/person_no"
+                        android:textColor="@color/colorTextBlack"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <TextView
+                        android:id="@+id/tv_person_no"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/view_height_20"
+                        android:text="@string/hint_text_null"
+                        android:textColor="@color/colorTextGray"
+                        android:textColorHint="@color/colorTextGray"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+
+                <include layout="@layout/view_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/person_name"
+                        android:drawablePadding="@dimen/view_height_10"
+                        android:paddingBottom="@dimen/view_height_10"
+                        android:paddingTop="@dimen/view_height_10"
+                        android:text="@string/person_name"
+                        android:textColor="@color/colorTextBlack1"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <TextView
+                        android:id="@+id/tv_person_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/view_height_20"
+                        android:text="@string/hint_text_null"
+                        android:textColor="@color/colorTextGray"
+                        android:textColorHint="@color/colorTextGray"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+
+                <include layout="@layout/view_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/person_sex"
+                        android:drawablePadding="@dimen/view_height_10"
+                        android:paddingBottom="@dimen/view_height_10"
+                        android:paddingTop="@dimen/view_height_10"
+                        android:text="@string/person_sex"
+                        android:textColor="@color/colorTextBlack1"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <TextView
+                        android:id="@+id/tv_person_sex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/view_height_20"
+                        android:text="@string/hint_text_null"
+                        android:textColor="@color/colorTextGray"
+                        android:textColorHint="@color/colorTextGray"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+
+                <include layout="@layout/view_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/person_phone"
+                        android:drawablePadding="@dimen/view_height_10"
+                        android:paddingBottom="@dimen/view_height_10"
+                        android:paddingTop="@dimen/view_height_10"
+                        android:text="@string/person_phone"
+                        android:textColor="@color/colorTextBlack1"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <TextView
+                        android:id="@+id/tv_person_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/view_height_20"
+                        android:text="@string/hint_text_null"
+                        android:textColor="@color/colorTextGray"
+                        android:textColorHint="@color/colorTextGray"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+
+                <include layout="@layout/view_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/person_email"
+                        android:drawablePadding="@dimen/view_height_10"
+                        android:paddingBottom="@dimen/view_height_10"
+                        android:paddingTop="@dimen/view_height_10"
+                        android:text="@string/person_email"
+                        android:textColor="@color/colorTextBlack1"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <TextView
+                        android:id="@+id/tv_person_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/view_height_20"
+                        android:text="@string/hint_text_null"
+                        android:textColor="@color/colorTextGray"
+                        android:textColorHint="@color/colorTextGray"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+
+                <include layout="@layout/view_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/person_role"
+                        android:drawablePadding="@dimen/view_height_10"
+                        android:paddingBottom="@dimen/view_height_10"
+                        android:paddingTop="@dimen/view_height_10"
+                        android:text="@string/person_role"
+                        android:textColor="@color/colorTextBlack1"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <TextView
+                        android:id="@+id/tv_person_role"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/view_height_20"
+                        android:text="@string/hint_text_null"
+                        android:textColor="@color/colorTextGray"
+                        android:textColorHint="@color/colorTextGray"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+
+                <include layout="@layout/view_divider_line" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/person_company"
+                        android:drawablePadding="@dimen/view_height_10"
+                        android:paddingBottom="@dimen/view_height_10"
+                        android:paddingTop="@dimen/view_height_10"
+                        android:text="@string/person_company"
+                        android:textColor="@color/colorTextBlack1"
+                        android:textSize="@dimen/text_size_17" />
+
+                    <TextView
+                        android:id="@+id/tv_person_company"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/view_height_20"
+                        android:text="@string/hint_text_null"
+                        android:textColor="@color/colorTextGray"
+                        android:textColorHint="@color/colorTextGray"
+                        android:textSize="@dimen/text_size_17" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/view_height_10"
+                android:layout_marginBottom="@dimen/view_height_10"
+                android:background="@color/colorBgWhite"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/view_height_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/person_content"
+                    android:drawablePadding="@dimen/view_height_10"
+                    android:paddingTop="@dimen/view_height_10"
+                    android:text="@string/person_content"
+                    android:textColor="@color/colorTextBlack1"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_person_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/view_height_10"
+                    android:hint="@string/person_content_hint"
+                    android:padding="@dimen/view_height_10"
+                    android:textColor="@color/colorTextGray"
+                    android:textColorHint="@color/colorTextGray"
+                    android:textSize="@dimen/text_size_17" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/view_divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBgWhite"
+        android:padding="@dimen/view_height_10">
+
+        <Button
+            android:id="@+id/btn_login_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_height_15"
+            android:layout_marginRight="@dimen/view_height_15"
+            android:background="@drawable/shape_btn_normal"
+            android:text="@string/person_login_out"
+            android:textColor="@color/colorBgWhite"
+            android:textSize="@dimen/text_size_17" />
+    </LinearLayout>
+</LinearLayout>

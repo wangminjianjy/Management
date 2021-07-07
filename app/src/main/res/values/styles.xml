@@ -1,0 +1,226 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorNormal</item>
+        <item name="android:actionBarStyle">@style/JzAppTheme.AppBarOverlay</item>
+        <item name="toolbarStyle" tools:ignore="NewApi">@style/MyToolBar</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <!--<item name="android:textColorPrimary">@color/white</item>-->
+    </style>
+
+    <style name="JzAppTheme.AppBarOverlay" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="MyToolBar" parent="Widget.AppCompat.Toolbar">
+        <!--左边边距-->
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <!--text 动作按钮-->
+    <style name="style_text_action">
+        <item name="android:paddingLeft">@dimen/view_height_8</item>
+        <item name="android:paddingRight">@dimen/view_height_8</item>
+        <item name="android:paddingTop">@dimen/view_height_6</item>
+        <item name="android:paddingBottom">@dimen/view_height_6</item>
+    </style>
+
+    <!--edit 普通-->
+    <style name="style_edit_normal">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/colorTextGray</item>
+        <item name="android:textColorHint">@color/colorInputHint</item>
+    </style>
+
+    <!--edit 无背景-->
+    <style name="style_edit_null" parent="style_edit_normal">
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="style_edit_null_margin" parent="style_edit_normal">
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginLeft">@dimen/view_height_10</item>
+        <item name="android:layout_marginRight">@dimen/view_height_10</item>
+    </style>
+    <!--edit 有边框-->
+    <style name="style_edit_border" parent="style_edit_normal">
+        <item name="android:background">@drawable/shape_edit</item>
+    </style>
+
+    <!--edit 有边框-->
+    <style name="style_edit_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_edit</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">right</item>
+        <item name="android:padding">@dimen/view_height_5</item>
+        <item name="android:layout_marginLeft">@dimen/view_height_10</item>
+        <item name="android:layout_marginTop">@dimen/view_height_2</item>
+        <item name="android:layout_marginRight">@dimen/view_height_5</item>
+        <item name="android:layout_marginBottom">@dimen/view_height_2</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+        <item name="android:inputType">number|numberDecimal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="style_edit_text_normal">
+        <item name="android:background">@drawable/shape_edit</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">right</item>
+        <item name="android:padding">@dimen/view_height_5</item>
+        <item name="android:layout_marginTop">@dimen/view_height_2</item>
+        <item name="android:layout_marginRight">@dimen/view_height_5</item>
+        <item name="android:layout_marginBottom">@dimen/view_height_2</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+        <item name="android:inputType">number|numberDecimal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="style_edit_other">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_edit</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">right</item>
+        <item name="android:padding">@dimen/view_height_5</item>
+        <item name="android:layout_marginLeft">@dimen/view_height_5</item>
+        <item name="android:layout_marginRight">@dimen/view_height_5</item>
+        <item name="android:layout_marginTop">@dimen/view_height_2</item>
+        <item name="android:layout_marginBottom">@dimen/view_height_2</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+        <item name="android:inputType">number|numberDecimal</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLines">1</item>
+    </style>
+
+    <style name="style_text_buckle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/view_height_7</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+    </style>
+
+    <style name="style_text_other">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/view_height_7</item>
+        <item name="android:paddingBottom">@dimen/view_height_7</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+    </style>
+
+    <style name="style_text_data">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/view_height_7</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+    </style>
+
+    <style name="style_text_unit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/view_height_7</item>
+        <item name="android:paddingBottom">@dimen/view_height_7</item>
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+    </style>
+
+    <!--底部导航栏-->
+    <style name="style_main_bottom_bar">
+        <item name="android:paddingBottom">@dimen/view_height_8</item>
+        <item name="android:paddingTop">@dimen/view_height_6</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal|bottom</item>
+        <item name="android:textColor">@drawable/color_check_bottom_menu</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+    </style>
+
+    <style name="style_anim_pop_bottom" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_bottom_out</item>
+    </style>
+
+    <style name="style_anim_pop_left" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_pop_left_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_pop_left_out</item>
+    </style>
+
+    <style name="DYAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="DYAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--<style name="style_tab_item">-->
+    <!--<item name="android:background">@drawable/selector_view_color</item>-->
+    <!--<item name="android:button">@null</item>-->
+    <!--<item name="android:textColor">@color/color_check_tab</item>-->
+    <!--<item name="android:gravity">center</item>-->
+    <!--<item name="android:padding">@dimen/view_height_10</item>-->
+    <!--</style>-->
+
+    <!--view-->
+    <style name="style_view_bar_padding">
+        <item name="android:paddingLeft">@dimen/view_height_5</item>
+        <item name="android:paddingTop">@dimen/view_height_10</item>
+        <item name="android:paddingRight">@dimen/view_height_5</item>
+        <item name="android:minHeight">@dimen/view_height_43</item>
+    </style>
+    <!--登录表单视图-->
+    <style name="login_form_view">
+        <item name="android:paddingLeft">@dimen/view_height_10</item>
+        <item name="android:paddingRight">@dimen/view_height_10</item>
+        <item name="android:paddingTop">@dimen/view_height_15</item>
+        <item name="android:paddingBottom">@dimen/view_height_15</item>
+        <item name="android:layout_marginBottom">@dimen/view_height_20</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--编辑框_无边框-->
+    <style name="normal_edit_null">
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">@dimen/view_height_5</item>
+        <item name="android:paddingTop">@dimen/view_height_1</item>
+        <item name="android:paddingRight">@dimen/view_height_5</item>
+        <item name="android:paddingBottom">@dimen/view_height_1</item>
+        <item name="android:textColor">@color/colorTextGray</item>
+        <item name="android:textColorHint">@color/colorTextGray</item>
+    </style>
+    <!--选择框_无边框-->
+    <style name="normal_checkbox_null">
+        <item name="android:button">@null</item>
+    </style>
+    <!--编辑框视图view_大-->
+    <style name="normal_edit_view_big">
+        <item name="android:paddingLeft">@dimen/view_height_20</item>
+        <item name="android:paddingTop">@dimen/view_height_10</item>
+        <item name="android:paddingRight">@dimen/view_height_20</item>
+        <item name="android:paddingBottom">@dimen/view_height_10</item>
+        <item name="android:textColorHint">@color/colorTextGray</item>
+        <item name="android:textColor">@color/colorTextBlack</item>
+    </style>
+    <!--横向分割线-->
+    <style name="normal_divider_horizontal_small">
+        <item name="android:layout_height">@dimen/view_height_1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/colorDividerDark2</item>
+    </style>
+    <!--按钮_主题色-->
+    <style name="normal_btn_theme">
+        <item name="android:background">@drawable/normal_btn_theme_shape</item>
+        <item name="android:textColor">@color/colorTextWhite</item>
+    </style>
+    <!--登录按钮样式-->
+    <style name="login_btn_login" parent="normal_btn_theme">
+        <item name="android:layout_marginLeft">@dimen/view_height_15</item>
+        <item name="android:layout_marginRight">@dimen/view_height_15</item>
+        <item name="android:textSize">@dimen/text_size_17</item>
+    </style>
+</resources>
