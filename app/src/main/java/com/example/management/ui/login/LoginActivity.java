@@ -9,12 +9,13 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
-import android.widget.TextView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.management.R;
 import com.example.management.base.BaseActivity;
 import com.example.management.base.BaseConfig;
+import com.example.management.bean.UserBean;
 import com.example.management.net.HttpCallback;
 import com.example.management.net.HttpModel;
 import com.example.management.net.HttpResult;
@@ -25,7 +26,7 @@ import com.google.gson.Gson;
 
 public class LoginActivity extends BaseActivity {
 
-    private TextView tvLoginIP;
+    private LinearLayout tvLoginIP;
     private EditText etUserName;
     private EditText etPwd;
     private Button btnLogin;
@@ -125,7 +126,12 @@ public class LoginActivity extends BaseActivity {
                 if (cbRemember.isChecked()) {
                     SharedPreUtil.saveLogin(true);
                 }
-                SharedPreUtil.saveUserInfo(new Gson().toJson(httpResult.getDate().get(0)));
+                UserBean userBean = new UserBean();
+                userBean.setUserId(httpResult.getResult().toString());
+                userBean.setUserName(httpResult.getResult2().toString());
+                userBean.setFactoryCode(httpResult.getResult4().toString());
+                userBean.setFactoryName(httpResult.getResult3().toString());
+                SharedPreUtil.saveUserInfo(new Gson().toJson(userBean));
                 startActivity(new Intent(LoginActivity.this, MainActivity.class));
             }
         });

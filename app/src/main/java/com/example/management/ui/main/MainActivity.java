@@ -36,14 +36,13 @@ public class MainActivity extends BaseActivity {
 
     private CustomViewPager mViewPager;
     private MainPagerAdapter mPagerAdapter;
+    private MainFragment mainFragment;
+    private CollectFragment collectFragment;
     private PersonFragment personFragment;
 
     private RadioGroup mMenuRg;
-    private AlarmRadioButton mTallyingARB;
-    private AlarmRadioButton mProductARB;
-    private AlarmRadioButton mQualityARB;
-    private AlarmRadioButton mChemicalARB;
-    private AlarmRadioButton mRegisterARB;
+    private AlarmRadioButton mMainARB;
+    private AlarmRadioButton mCollectARB;
     private AlarmRadioButton mPersonARB;
 
     private List<AlarmRadioButton> btnItems;
@@ -72,19 +71,13 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void initView(View contentView) {
         mMenuRg = contentView.findViewById(R.id.radio_bar);
-        mTallyingARB = mMenuRg.findViewById(R.id.tab_menu_tallying);
-        mProductARB = mMenuRg.findViewById(R.id.tab_menu_sales);
-        mQualityARB = mMenuRg.findViewById(R.id.tab_menu_quality);
-        mChemicalARB = mMenuRg.findViewById(R.id.tab_menu_chemical);
-        mRegisterARB = mMenuRg.findViewById(R.id.tab_menu_register);
+        mMainARB = mMenuRg.findViewById(R.id.tab_menu_main);
+        mCollectARB = mMenuRg.findViewById(R.id.tab_menu_collect);
         mPersonARB = mMenuRg.findViewById(R.id.tab_menu_person);
-        mViewPager = (CustomViewPager) findViewById(R.id.view_pager);
+        mViewPager = findViewById(R.id.view_pager);
 
-        mTallyingARB.dismissSign();
-        mProductARB.dismissSign();
-        mQualityARB.dismissSign();
-        mChemicalARB.dismissSign();
-        mRegisterARB.dismissSign();
+        mMainARB.dismissSign();
+        mCollectARB.dismissSign();
         mPersonARB.dismissSign();
     }
 
@@ -99,31 +92,27 @@ public class MainActivity extends BaseActivity {
         fragments = new ArrayList<>();
         btnItems = new ArrayList<>();
 
+        mainFragment = MainFragment.newInstance();
+        collectFragment = CollectFragment.newInstance();
         personFragment = PersonFragment.newInstance();
 
         Gson gson = new Gson();
         UserBean userBean = gson.fromJson(SharedPreUtil.getUserInfo(), UserBean.class);
-        String[] perArray = userBean.getFactoryCode().split(",");
-//        String[] perArray = "1,2,3,4".split(",");
-        mTallyingARB.setVisibility(View.GONE);
-        mQualityARB.setVisibility(View.GONE);
-        mChemicalARB.setVisibility(View.GONE);
-        mProductARB.setVisibility(View.GONE);
-        mRegisterARB.setVisibility(View.GONE);
-        for (int i = 0; i < perArray.length; i++) {
-            switch (perArray[i]) {
+//        String[] perArray = userBean.getFactoryCode().split(",");
+//        String[] perArray = "1,2".split(",");
+//        mMainARB.setVisibility(View.GONE);
+//        mCollectARB.setVisibility(View.GONE);
+//        for (int i = 0; i < perArray.length; i++) {
+//            switch (perArray[i]) {
 //                case "1":
-//                    mTallyingARB.setVisibility(View.VISIBLE);
-//                    mQualityARB.setVisibility(View.VISIBLE);
-//                    fragments.add(tallyingFragment);
-//                    btnItems.add(mTallyingARB);
-//                    fragments.add(qualityFragment);
-//                    btnItems.add(mQualityARB);
+//                    mMainARB.setVisibility(View.VISIBLE);
+//                    fragments.add(mainFragment);
+//                    btnItems.add(mMainARB);
 //                    break;
 //                case "2":
-//                    mChemicalARB.setVisibility(View.VISIBLE);
-//                    fragments.add(chemicalFragment);
-//                    btnItems.add(mChemicalARB);
+//                    mCollectARB.setVisibility(View.VISIBLE);
+//                    fragments.add(collectFragment);
+//                    btnItems.add(mCollectARB);
 //                    break;
 //                case "3":
 //                    mRegisterARB.setVisibility(View.VISIBLE);
@@ -135,8 +124,12 @@ public class MainActivity extends BaseActivity {
 //                    fragments.add(productFragment);
 //                    btnItems.add(mProductARB);
 //                    break;
-            }
-        }
+//            }
+//        }
+        fragments.add(mainFragment);
+        btnItems.add(mMainARB);
+        fragments.add(collectFragment);
+        btnItems.add(mCollectARB);
         fragments.add(personFragment);
         btnItems.add(mPersonARB);
         mPagerAdapter = new MainPagerAdapter(getSupportFragmentManager(), fragments);
@@ -149,22 +142,11 @@ public class MainActivity extends BaseActivity {
     }
 
     private void setFragmentData() {
-//        if (qualityFragment != null && fragments.get(mViewNum) instanceof QualityFragment) {
-//            qualityFragment.getQualityListData();
-//        } else if (tallyingFragment != null && fragments.get(mViewNum) instanceof TallyingFragment) {
-//            initNFC();
-//            tallyingFragment.getStorageList();
-//        } else if (personFragment != null && fragments.get(mViewNum) instanceof PersonFragment) {
-//            personFragment.setPersonData();
-//        } else if (registerFragment != null && fragments.get(mViewNum) instanceof RegisterFragment) {
-//            initNFC();
-//        } else if (chemicalFragment != null && fragments.get(mViewNum) instanceof ChemicalFragment) {
-//            initNFC();
-//            chemicalFragment.getStorageList();
-//        } else if (productFragment != null && fragments.get(mViewNum) instanceof ProductFragment) {
-//            initNFC();
-//            productFragment.getStorageList();
-//        }
+        if (collectFragment != null && fragments.get(mViewNum) instanceof CollectFragment) {
+            collectFragment.getCollectData();
+        } else if (personFragment != null && fragments.get(mViewNum) instanceof PersonFragment) {
+            personFragment.setPersonData();
+        }
     }
 
     @Override

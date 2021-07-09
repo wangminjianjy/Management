@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_item_normal"
+    android:orientation="horizontal"
+    android:padding="@dimen/view_height_6">
+
+    <ImageView
+        android:layout_width="@dimen/view_height_70"
+        android:layout_height="@dimen/view_height_70"
+        android:padding="@dimen/view_height_10"
+        android:src="@drawable/collect_purchase" />
+
+    <TextView
+        android:id="@+id/tv_collect_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:paddingLeft="@dimen/view_height_20"
+        android:textColor="@color/colorTextGray"
+        android:textSize="@dimen/text_size_20" />
+
+    <TextView
+        android:id="@+id/tv_collect_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:paddingLeft="@dimen/view_height_20"
+        android:paddingRight="@dimen/view_height_20"
+        android:text="@string/collect_num"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/text_size_24" />
+</LinearLayout>

@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWindow"
+    android:orientation="vertical"
+    tools:context=".ui.main.CollectFragment">
+
+    <include layout="@layout/toolbar_custom_simple" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBgWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/collect_weigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="@dimen/view_height_10"
+            android:text="@string/main_num"
+            android:textColor="@color/colorTextBlack"
+            android:textSize="@dimen/text_size_20" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/view_height_10"
+            android:text="@string/main_weigh_day"
+            android:textColor="@color/colorInputHint"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_collect_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_height_10"
+        android:layout_marginTop="@dimen/view_height_5"
+        android:layout_marginEnd="@dimen/view_height_10"
+        android:layout_marginBottom="@dimen/view_height_5"
+        android:divider="@color/colorDivider"
+        android:dividerHeight="@dimen/view_height_10"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+</LinearLayout>

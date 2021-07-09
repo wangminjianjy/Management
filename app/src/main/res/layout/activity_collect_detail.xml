@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWhite"
+    android:orientation="vertical"
+    tools:context=".ui.collect.CollectDetailActivity">
+
+    <include layout="@layout/toolbar_custom_simple" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fadingEdge="none"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/view_height_5"
+            android:paddingTop="@dimen/view_height_10"
+            android:paddingBottom="@dimen/view_height_10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_truck"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_truck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_driver"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_driver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_number"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_flow"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_flow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_material"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_material"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_net"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_net"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_gross"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_gross"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_tare"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_tare"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_deliver"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_deliver"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_receive"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_receive"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_create"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_create"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_yi"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_yi"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <include layout="@layout/view_divider_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/collect_detail_er"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_17" />
+
+                <TextView
+                    android:id="@+id/tv_collect_detail_er"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/view_height_10"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -20,14 +20,9 @@ public class PersonFragment extends BaseFragment {
 
     private TextView personBack;
     private TextView personTitle;
-    private TextView personNo;
     private TextView personName;
-    private TextView personSex;
-    private TextView personPhone;
-    private TextView personEmail;
-    private TextView personRole;
-    private TextView personTeamName;
-    private TextView personContent;
+    private TextView personCompanyName;
+    private TextView personCompanyCode;
     private Button loginOut;
 
     private AlertDialogUtil alertDialog;
@@ -53,14 +48,9 @@ public class PersonFragment extends BaseFragment {
     protected void initView(View contentView) {
         personBack = contentView.findViewById(R.id.custom_back);
         personTitle = contentView.findViewById(R.id.custom_title);
-        personNo = contentView.findViewById(R.id.tv_person_no);
         personName = contentView.findViewById(R.id.tv_person_name);
-        personSex = contentView.findViewById(R.id.tv_person_sex);
-        personPhone = contentView.findViewById(R.id.tv_person_phone);
-        personEmail = contentView.findViewById(R.id.tv_person_email);
-        personRole = contentView.findViewById(R.id.tv_person_role);
-        personTeamName = contentView.findViewById(R.id.tv_person_company);
-        personContent = contentView.findViewById(R.id.tv_person_content);
+        personCompanyName = contentView.findViewById(R.id.tv_person_company);
+        personCompanyCode = contentView.findViewById(R.id.tv_person_company_code);
         loginOut = contentView.findViewById(R.id.btn_login_out);
     }
 
@@ -91,29 +81,14 @@ public class PersonFragment extends BaseFragment {
     public void setPersonData() {
         Gson gson = new Gson();
         UserBean userBean = gson.fromJson(SharedPreUtil.getUserInfo(), UserBean.class);
-        if (!TextUtils.isEmpty(userBean.getUserCode())) {
-            personNo.setText(userBean.getUserCode());
-        }
         if (!TextUtils.isEmpty(userBean.getUserName())) {
             personName.setText(userBean.getUserName());
         }
-        if (!TextUtils.isEmpty(userBean.getSex())) {
-            personSex.setText(userBean.getSex());
+        if (!TextUtils.isEmpty(userBean.getFactoryName())) {
+            personCompanyName.setText(userBean.getFactoryName());
         }
-        if (!TextUtils.isEmpty(userBean.getTelNo())) {
-            personPhone.setText(userBean.getTelNo());
-        }
-        if (!TextUtils.isEmpty(userBean.getEmail())) {
-            personEmail.setText(userBean.getEmail());
-        }
-        if (!TextUtils.isEmpty(userBean.getRole())) {
-            personRole.setText(userBean.getRole());
-        }
-        if (!TextUtils.isEmpty(userBean.getTeamName())) {
-            personTeamName.setText(userBean.getTeamName());
-        }
-        if (!TextUtils.isEmpty(userBean.getRemark())) {
-            personContent.setText(userBean.getRemark());
+        if (!TextUtils.isEmpty(userBean.getFactoryCode())) {
+            personCompanyCode.setText(userBean.getFactoryCode());
         }
     }
 

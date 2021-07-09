@@ -48,7 +48,7 @@ public abstract class HttpCallback implements StringCallback {
 
     public int parseResponseCode(HttpResult httpResult) {
         int code = httpResult.getCode();
-        String msg = httpResult.getMessage();
+        String msg = httpResult.getResultMsg();
         ToastUtil.showSingleToast(msg, Toast.LENGTH_LONG);
         return code;
     }

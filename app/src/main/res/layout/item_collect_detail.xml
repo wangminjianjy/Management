@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_item_normal"
+    android:orientation="horizontal"
+    android:padding="@dimen/view_height_6">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/view_height_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_height_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_sum_truck"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/tv_collect_sum_truck"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_text_null"
+                android:paddingLeft="@dimen/view_height_10"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_height_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_sum_driver"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/tv_collect_sum_driver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_text_null"
+                android:paddingLeft="@dimen/view_height_10"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_height_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_sum_material"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/tv_collect_sum_material"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_text_null"
+                android:paddingLeft="@dimen/view_height_10"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_height_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_sum_net"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/tv_collect_sum_net"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_text_null"
+                android:paddingLeft="@dimen/view_height_10"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/view_height_3">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_sum_deliver"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_17" />
+
+            <TextView
+                android:id="@+id/tv_collect_sum_deliver"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/hint_text_null"
+                android:paddingLeft="@dimen/view_height_10"
+                android:textColor="@color/colorTextBlack"
+                android:textSize="@dimen/text_size_17" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

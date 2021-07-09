@@ -1,5 +1,5 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="app_name">一卡通</string>
+    <string name="app_name">智能物流</string>
 
     <string name="hint_welcome">欢迎您使用\n本系统</string>
     <string name="hint_waiting">请稍后</string>
@@ -46,38 +46,54 @@
 
     <!-- 主页 -->
     <string name="main_menu_work">首页</string>
-    <string name="main_menu_quality">质检信息</string>
-    <string name="main_menu_tallying">玉米收货</string>
-    <string name="main_menu_chemical">化工原料收货</string>
-    <string name="main_menu_sales">销售发货</string>
-    <string name="main_menu_register">门卫登记</string>
-    <string name="main_menu_quality_list">质检列表</string>
+    <string name="main_menu_collect">汇总</string>
     <string name="main_menu_person">个人信息</string>
 
-    <!-- 质检信息 -->
-    <string name="quality_title">质检信息</string>
-    <string name="quality_sum">合计 0 车</string>
-    <string name="quality_water">水分</string>
-    <string name="quality_break">———</string>
-    <string name="quality_area">产地</string>
-    <string name="quality_area_hint">请选择产地</string>
-    <string name="quality_truck">车型</string>
-    <string name="quality_truck_hint">请选择车型</string>
+    <!-- 首页 -->
+    <string name="main_title">首页</string>
+    <string name="main_company">单位名称</string>
+    <string name="main_weigh">累积过磅车次</string>
+    <string name="main_num">0</string>
+    <string name="main_weigh_day">今日过磅车次</string>
+    <string name="main_weigh_month">本月过磅车次</string>
+
+    <!-- 汇总 -->
+    <string name="collect_title">汇总</string>
+    <string name="collect_sale">发料车辆数:</string>
+    <string name="collect_purchase">收料车辆数:</string>
+    <string name="collect_num">0</string>
+
+    <!-- 汇总列表 -->
+    <string name="collect_sum_title">汇总列表</string>
+    <string name="collect_sum_truck">车牌号码</string>
+    <string name="collect_sum_driver">司机姓名</string>
+    <string name="collect_sum_material">物料名称</string>
+    <string name="collect_sum_net">物料净重</string>
+    <string name="collect_sum_deliver">运输单位</string>
+
+    <!-- 汇总详情 -->
+    <string name="collect_detail_title">详情</string>
+    <string name="collect_detail_truck">车牌号码:</string>
+    <string name="collect_detail_driver">司机姓名:</string>
+    <string name="collect_detail_number">身份证号:</string>
+    <string name="collect_detail_flow">业务类型:</string>
+    <string name="collect_detail_material">物料名称:</string>
+    <string name="collect_detail_net">物料净重:</string>
+    <string name="collect_detail_tare">物料皮重:</string>
+    <string name="collect_detail_gross">物料毛重:</string>
+    <string name="collect_detail_deliver">运输单位:</string>
+    <string name="collect_detail_receive">收货单位:</string>
+    <string name="collect_detail_create">创建时间:</string>
+    <string name="collect_detail_yi">一磅时间:</string>
+    <string name="collect_detail_er">二磅时间:</string>
 
     <!-- 个人信息 -->
     <string name="person_title">个人信息</string>
-    <string name="person_no">编&#160;&#160;&#160;&#160;号</string>
-    <string name="person_name">姓&#160;&#160;&#160;&#160;名</string>
-    <string name="person_sex">性&#160;&#160;&#160;&#160;别</string>
-    <string name="person_phone">电&#160;&#160;&#160;&#160;话</string>
-    <string name="person_email">邮&#160;&#160;&#160;&#160;箱</string>
-    <string name="person_role">角&#160;&#160;&#160;&#160;色</string>
-    <string name="person_company">单&#160;&#160;&#160;&#160;位</string>
+    <string name="person_name">用户姓名</string>
+    <string name="person_company">单位名称</string>
+    <string name="person_company_code">单位编号</string>
     <string name="person_content">备注</string>
     <string name="person_content_hint">暂无信息展示</string>
     <string name="person_login_out">退出</string>
     <string name="person_login_out_hint">确认退出当前用户？</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

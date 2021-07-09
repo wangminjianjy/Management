@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWindow"
+    android:orientation="vertical"
+    tools:context=".ui.collect.CollectActivity">
+
+    <include layout="@layout/toolbar_custom_simple" />
+
+    <TextView
+        android:id="@+id/tv_collect_data_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/view_height_15"
+        android:text="@string/hint_data_null"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/text_size_15"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_collect_sum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_height_10"
+        android:layout_marginTop="@dimen/view_height_5"
+        android:layout_marginEnd="@dimen/view_height_10"
+        android:layout_marginBottom="@dimen/view_height_5"
+        android:divider="@color/colorDivider"
+        android:dividerHeight="@dimen/view_height_10"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+</LinearLayout>
