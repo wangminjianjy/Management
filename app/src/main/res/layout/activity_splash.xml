@@ -15,15 +15,15 @@
         android:layout_gravity="center"
         android:background="@drawable/splash" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:lineSpacingExtra="@dimen/view_height_10"
-        android:text="@string/hint_welcome"
-        android:textColor="@color/colorNormal"
-        android:textSize="@dimen/text_size_30" />
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:gravity="center"-->
+<!--        android:lineSpacingExtra="@dimen/view_height_10"-->
+<!--        android:text="@string/hint_welcome"-->
+<!--        android:textColor="@color/colorNormal"-->
+<!--        android:textSize="@dimen/text_size_30" />-->
 
     <TextView
         android:id="@+id/tv_second"
