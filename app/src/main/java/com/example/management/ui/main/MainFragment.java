@@ -80,8 +80,7 @@ public class MainFragment extends BaseFragment {
         Gson gson = new Gson();
         UserBean userBean = gson.fromJson(SharedPreUtil.getUserInfo(), UserBean.class);
         mainCompany.setText(userBean.getFactoryName());
-        String companyID = userBean.getFactoryCode();
-        getMainData(companyID);
+//        getMainData(companyID);
     }
 
     @Override
@@ -94,7 +93,10 @@ public class MainFragment extends BaseFragment {
         }
     }
 
-    public void getMainData(String companyID) {
+    public void getMainData() {
+        Gson gson = new Gson();
+        UserBean userBean = gson.fromJson(SharedPreUtil.getUserInfo(), UserBean.class);
+        String companyID = userBean.getFactoryCode();
         HttpModel.getInstance().MainData(companyID, new HttpCallback(getActivity()) {
             @Override
             public void onSuccessStr(HttpResult httpResult) {

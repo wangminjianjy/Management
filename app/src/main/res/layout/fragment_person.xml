@@ -59,6 +59,7 @@
                 <include layout="@layout/view_divider_line" />
 
                 <LinearLayout
+                    android:visibility="gone"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -84,7 +85,7 @@
                         android:textSize="@dimen/text_size_17" />
                 </LinearLayout>
 
-                <include layout="@layout/view_divider_line" />
+<!--                <include layout="@layout/view_divider_line" />-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -111,37 +112,6 @@
                         android:textColorHint="@color/colorTextGray"
                         android:textSize="@dimen/text_size_17" />
                 </LinearLayout>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/view_height_10"
-                android:layout_marginBottom="@dimen/view_height_10"
-                android:background="@color/colorBgWhite"
-                android:orientation="vertical"
-                android:paddingLeft="@dimen/view_height_15">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableLeft="@drawable/person_content"
-                    android:drawablePadding="@dimen/view_height_10"
-                    android:paddingTop="@dimen/view_height_10"
-                    android:text="@string/person_content"
-                    android:textColor="@color/colorTextBlack1"
-                    android:textSize="@dimen/text_size_17" />
-
-                <TextView
-                    android:id="@+id/tv_person_content"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/view_height_10"
-                    android:hint="@string/person_content_hint"
-                    android:padding="@dimen/view_height_10"
-                    android:textColor="@color/colorTextGray"
-                    android:textColorHint="@color/colorTextGray"
-                    android:textSize="@dimen/text_size_17" />
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

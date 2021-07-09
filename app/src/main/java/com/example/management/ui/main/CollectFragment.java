@@ -96,7 +96,7 @@ public class CollectFragment extends BaseFragment {
         HttpModel.getInstance().CollectData(companyID, new HttpCallback(getActivity()) {
             @Override
             public void onSuccessStr(HttpResult httpResult) {
-                collectWeigh.setText(String.valueOf(httpResult.getResult()));
+                collectWeigh.setText(String.valueOf(httpResult.getResultTotle()));
                 Gson gson = new Gson();
                 categoryList = gson.fromJson(gson.toJson(httpResult.getResult2()), new TypeToken<List<CategoryBean>>() {
                 }.getType());

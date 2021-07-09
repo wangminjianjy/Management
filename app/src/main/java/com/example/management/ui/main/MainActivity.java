@@ -142,7 +142,9 @@ public class MainActivity extends BaseActivity {
     }
 
     private void setFragmentData() {
-        if (collectFragment != null && fragments.get(mViewNum) instanceof CollectFragment) {
+        if (mainFragment != null && fragments.get(mViewNum) instanceof MainFragment) {
+            mainFragment.getMainData();
+        } else if (collectFragment != null && fragments.get(mViewNum) instanceof CollectFragment) {
             collectFragment.getCollectData();
         } else if (personFragment != null && fragments.get(mViewNum) instanceof PersonFragment) {
             personFragment.setPersonData();
