@@ -34,6 +34,17 @@
             android:textSize="@dimen/text_size_14" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+id/tv_collect_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/view_height_15"
+        android:text="@string/hint_data_null"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/text_size_15"
+        android:visibility="gone" />
+
     <ListView
         android:id="@+id/lv_collect_data"
         android:layout_width="match_parent"

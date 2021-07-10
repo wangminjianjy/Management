@@ -30,6 +30,7 @@ public class CollectFragment extends BaseFragment {
     private TextView collectBack;
     private TextView collectTitle;
     private TextView collectWeigh;
+    private TextView collectNull;
     private ListView lvCollectData;
 
     private List<CategoryBean> categoryList;
@@ -57,6 +58,7 @@ public class CollectFragment extends BaseFragment {
         collectBack = contentView.findViewById(R.id.custom_back);
         collectTitle = contentView.findViewById(R.id.custom_title);
         collectWeigh = contentView.findViewById(R.id.collect_weigh);
+        collectNull = contentView.findViewById(R.id.tv_collect_null);
         lvCollectData = contentView.findViewById(R.id.lv_collect_data);
     }
 
@@ -100,6 +102,20 @@ public class CollectFragment extends BaseFragment {
                 Gson gson = new Gson();
                 categoryList = gson.fromJson(gson.toJson(httpResult.getResult2()), new TypeToken<List<CategoryBean>>() {
                 }.getType());
+                if (categoryList.size() == 0) {
+                    collectNull.setVisibility(View.VISIBLE);
+                } else {
+                    collectNull.setVisibility(View.GONE);
+                    collectAdapter.setData(categoryList);
+                    collectAdapter.notifyDataSetChanged();
+                }
+            }
+
+            @Override
+            public void onErrorStr(HttpResult httpResult) {
+                super.onErrorStr(httpResult);
+                collectNull.setVisibility(View.VISIBLE);
+                categoryList.clear();
                 collectAdapter.setData(categoryList);
                 collectAdapter.notifyDataSetChanged();
             }

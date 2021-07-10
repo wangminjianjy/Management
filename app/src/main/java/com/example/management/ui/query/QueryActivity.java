@@ -278,12 +278,12 @@ public class QueryActivity extends BaseActivity {
         String yearStart = String.format(Locale.CHINA, "%d", startDate.get(Calendar.YEAR));
         String monthStart = String.format(Locale.CHINA, "%02d", startDate.get(Calendar.MONTH) + 1);
         String dayStart = String.format(Locale.CHINA, "%02d", startDate.get(Calendar.DAY_OF_MONTH));
-        queryStart.setText(String.format(Locale.CHINA, "%s-%s-%s", yearStart, monthStart, dayStart));
+//        queryStart.setText(String.format(Locale.CHINA, "%s-%s-%s", yearStart, monthStart, dayStart));
 
         String yearEnd = String.format(Locale.CHINA, "%d", endDate.get(Calendar.YEAR));
         String monthEnd = String.format(Locale.CHINA, "%02d", endDate.get(Calendar.MONTH) + 1);
         String dayEnd = String.format(Locale.CHINA, "%02d", endDate.get(Calendar.DAY_OF_MONTH));
-        queryEnd.setText(String.format(Locale.CHINA, "%s-%s-%s", yearEnd, monthEnd, dayEnd));
+//        queryEnd.setText(String.format(Locale.CHINA, "%s-%s-%s", yearEnd, monthEnd, dayEnd));
     }
 
     public int compareDate(Date date1, Date date2) {
