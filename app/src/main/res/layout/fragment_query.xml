@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBgWindow"
+    android:orientation="vertical"
+    tools:context=".ui.main.QueryFragment">
+
+    <include layout="@layout/toolbar_custom_simple" />
+
+    <LinearLayout
+        android:id="@+id/ll_search_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_height_10"
+        android:layout_marginTop="@dimen/view_height_5"
+        android:layout_marginRight="@dimen/view_height_10"
+        android:background="@color/colorBgWhite"
+        android:gravity="center"
+        android:padding="@dimen/view_height_10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/quality_search"
+            android:drawablePadding="@dimen/view_height_5"
+            android:text="@string/hint_search_text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/view_height_10"
+        android:layout_marginRight="@dimen/view_height_10"
+        android:background="@color/colorTextBlack"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/view_height_10"
+        android:layout_marginRight="@dimen/view_height_10"
+        android:background="@color/colorBgWhite"
+        android:gravity="center"
+        android:padding="@dimen/view_height_10"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/query_flow"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_15" />
+
+                <EditText
+                    android:id="@+id/et_query_flow"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_height_10"
+                    android:layout_marginRight="@dimen/view_height_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_edit"
+                    android:hint="@string/query_flow_hint"
+                    android:padding="@dimen/view_height_5"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/query_truck"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_15" />
+
+                <EditText
+                    android:id="@+id/et_query_truck"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_height_10"
+                    android:layout_marginRight="@dimen/view_height_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_edit"
+                    android:hint="@string/query_truck_hint"
+                    android:padding="@dimen/view_height_5"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/query_start"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_query_start"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_height_10"
+                    android:layout_marginRight="@dimen/view_height_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_edit"
+                    android:hint="@string/query_start_hint"
+                    android:padding="@dimen/view_height_5"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/view_height_5">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/query_end"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/tv_query_end"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/view_height_10"
+                    android:layout_marginRight="@dimen/view_height_10"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_edit"
+                    android:hint="@string/query_end_hint"
+                    android:padding="@dimen/view_height_5"
+                    android:textColor="@color/colorTextBlack"
+                    android:textSize="@dimen/text_size_15" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_query_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_btn_small"
+            android:drawableStart="@drawable/quality_search"
+            android:drawablePadding="@dimen/view_height_5"
+            android:padding="@dimen/view_height_10"
+            android:text="@string/hint_search_text"
+            android:textColor="@color/colorTextWhite" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_query_null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="@dimen/view_height_15"
+        android:text="@string/hint_data_null"
+        android:textColor="@color/colorTextBlack"
+        android:textSize="@dimen/text_size_15"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lv_query_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/view_height_10"
+        android:layout_marginTop="@dimen/view_height_5"
+        android:layout_marginEnd="@dimen/view_height_10"
+        android:layout_marginBottom="@dimen/view_height_5"
+        android:divider="@color/colorDivider"
+        android:dividerHeight="@dimen/view_height_10"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+</LinearLayout>

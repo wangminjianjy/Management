@@ -122,4 +122,44 @@ public class HttpModel {
                 .build();
         okHttpClientManager.postAsyn(request, callback);
     }
+
+    /**
+     * 查询数据
+     *
+     * @param callback
+     */
+    public void QueryData(String flowName, String companyNo, String startTime, String endTime,
+                          String truckCode, StringCallback callback) {
+        RequestBody formBody = new FormBody.Builder()
+                .add("FlowName", flowName)
+                .add("CompanyNumber", companyNo)
+                .add("StartTime", startTime)
+                .add("EndTime", endTime)
+                .add("TruckCode", truckCode)
+                .build();
+        Request request = new Request.Builder()
+                .url(getInterfaceUrl() + "DataInterface/HistoryInterface.ashx")
+                .post(formBody)
+                .build();
+        okHttpClientManager.postAsyn(request, callback);
+    }
+
+    /**
+     * 修改密码
+     *
+     * @param callback
+     */
+    public void ChangePwd(String userID, String pwdOld, String pwdNew, String pwdConfirm, StringCallback callback) {
+        RequestBody formBody = new FormBody.Builder()
+                .add("UserID", userID)
+                .add("KouLingOld", pwdOld)
+                .add("KouLingNew1", pwdNew)
+                .add("KouLingNew2", pwdConfirm)
+                .build();
+        Request request = new Request.Builder()
+                .url(getInterfaceUrl() + "DataInterface/PasswordInterface.ashx")
+                .post(formBody)
+                .build();
+        okHttpClientManager.postAsyn(request, callback);
+    }
 }

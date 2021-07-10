@@ -10,6 +10,7 @@ public class UserBean implements Serializable {
 
     private String UserId;
     private String UserName;
+    private String UserPwd;
     private String FactoryCode;
     private String FactoryName;
 
@@ -27,6 +28,14 @@ public class UserBean implements Serializable {
 
     public void setUserName(String userName) {
         UserName = userName;
+    }
+
+    public String getUserPwd() {
+        return UserPwd;
+    }
+
+    public void setUserPwd(String userPwd) {
+        UserPwd = userPwd;
     }
 
     public String getFactoryCode() {

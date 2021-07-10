@@ -129,6 +129,7 @@ public class LoginActivity extends BaseActivity {
                 UserBean userBean = new UserBean();
                 userBean.setUserId(httpResult.getResult().toString());
                 userBean.setUserName(httpResult.getResult2().toString());
+                userBean.setUserPwd(userPwd);
                 userBean.setFactoryCode(httpResult.getResult4().toString());
                 userBean.setFactoryName(httpResult.getResult3().toString());
                 SharedPreUtil.saveUserInfo(new Gson().toJson(userBean));

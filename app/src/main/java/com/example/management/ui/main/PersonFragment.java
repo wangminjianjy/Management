@@ -12,6 +12,8 @@ import com.example.management.base.BaseConfig;
 import com.example.management.base.BaseFragment;
 import com.example.management.bean.UserBean;
 import com.example.management.ui.login.LoginActivity;
+import com.example.management.ui.person.PwdActivity;
+import com.example.management.ui.query.QueryDetailActivity;
 import com.example.management.util.AlertDialogUtil;
 import com.example.management.util.SharedPreUtil;
 import com.google.gson.Gson;
@@ -23,6 +25,7 @@ public class PersonFragment extends BaseFragment {
     private TextView personName;
     private TextView personCompanyName;
     private TextView personCompanyCode;
+    private Button changePwd;
     private Button loginOut;
 
     private AlertDialogUtil alertDialog;
@@ -51,11 +54,13 @@ public class PersonFragment extends BaseFragment {
         personName = contentView.findViewById(R.id.tv_person_name);
         personCompanyName = contentView.findViewById(R.id.tv_person_company);
         personCompanyCode = contentView.findViewById(R.id.tv_person_company_code);
+        changePwd = contentView.findViewById(R.id.btn_change);
         loginOut = contentView.findViewById(R.id.btn_login_out);
     }
 
     @Override
     protected void bindEvent(View mContentView) {
+        changePwd.setOnClickListener(this);
         loginOut.setOnClickListener(this);
     }
 
@@ -68,6 +73,9 @@ public class PersonFragment extends BaseFragment {
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
+            case R.id.btn_change:
+                ChangePwd();
+                break;
             case R.id.btn_login_out:
                 alertDialog = new AlertDialogUtil(getContext(), getString(R.string.person_login_out_hint), 0,
                         false, BaseConfig.REQUEST_CODE_FIRST, onDialogClick);
@@ -112,6 +120,11 @@ public class PersonFragment extends BaseFragment {
         SharedPreUtil.saveLogin(false);
         Intent intent = new Intent(getActivity(), LoginActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
+    }
+
+    private void ChangePwd() {
+        Intent intent = new Intent(getActivity(), PwdActivity.class);
         startActivity(intent);
     }
 }

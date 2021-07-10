@@ -3,10 +3,12 @@ package com.example.management.ui.main;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.management.R;
+import com.example.management.base.BaseConfig;
 import com.example.management.base.BaseFragment;
 import com.example.management.bean.CategoryBean;
 import com.example.management.bean.MainBean;
@@ -15,7 +17,9 @@ import com.example.management.net.HttpCallback;
 import com.example.management.net.HttpModel;
 import com.example.management.net.HttpResult;
 import com.example.management.ui.adapter.CategoryAdapter;
+import com.example.management.ui.collect.CollectActivity;
 import com.example.management.ui.login.LoginActivity;
+import com.example.management.ui.query.QueryActivity;
 import com.example.management.util.SharedPreUtil;
 import com.google.gson.Gson;
 
@@ -65,7 +69,7 @@ public class MainFragment extends BaseFragment {
 
     @Override
     protected void bindEvent(View mContentView) {
-
+        lvMainData.setOnItemClickListener(onItemClick);
     }
 
     @Override
@@ -110,5 +114,18 @@ public class MainFragment extends BaseFragment {
                 categoryAdapter.notifyDataSetChanged();
             }
         });
+    }
+
+    AdapterView.OnItemClickListener onItemClick = new AdapterView.OnItemClickListener() {
+        @Override
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            Query(categoryList.get(position).getCategoryName());
+        }
+    };
+
+    private void Query(String type) {
+        Intent intent = new Intent(getActivity(), QueryActivity.class);
+        intent.putExtra(BaseConfig.PARAM_QUERY, type);
+        startActivity(intent);
     }
 }

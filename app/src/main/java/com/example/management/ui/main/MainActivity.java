@@ -38,11 +38,13 @@ public class MainActivity extends BaseActivity {
     private MainPagerAdapter mPagerAdapter;
     private MainFragment mainFragment;
     private CollectFragment collectFragment;
+//    private QueryFragment queryFragment;
     private PersonFragment personFragment;
 
     private RadioGroup mMenuRg;
     private AlarmRadioButton mMainARB;
     private AlarmRadioButton mCollectARB;
+//    private AlarmRadioButton mQueryARB;
     private AlarmRadioButton mPersonARB;
 
     private List<AlarmRadioButton> btnItems;
@@ -73,11 +75,13 @@ public class MainActivity extends BaseActivity {
         mMenuRg = contentView.findViewById(R.id.radio_bar);
         mMainARB = mMenuRg.findViewById(R.id.tab_menu_main);
         mCollectARB = mMenuRg.findViewById(R.id.tab_menu_collect);
+//        mQueryARB = mMenuRg.findViewById(R.id.tab_menu_query);
         mPersonARB = mMenuRg.findViewById(R.id.tab_menu_person);
         mViewPager = findViewById(R.id.view_pager);
 
         mMainARB.dismissSign();
         mCollectARB.dismissSign();
+//        mQueryARB.dismissSign();
         mPersonARB.dismissSign();
     }
 
@@ -95,6 +99,7 @@ public class MainActivity extends BaseActivity {
         mainFragment = MainFragment.newInstance();
         collectFragment = CollectFragment.newInstance();
         personFragment = PersonFragment.newInstance();
+//        queryFragment = QueryFragment.newInstance();
 
         Gson gson = new Gson();
         UserBean userBean = gson.fromJson(SharedPreUtil.getUserInfo(), UserBean.class);
@@ -130,6 +135,8 @@ public class MainActivity extends BaseActivity {
         btnItems.add(mMainARB);
         fragments.add(collectFragment);
         btnItems.add(mCollectARB);
+//        fragments.add(queryFragment);
+//        btnItems.add(mQueryARB);
         fragments.add(personFragment);
         btnItems.add(mPersonARB);
         mPagerAdapter = new MainPagerAdapter(getSupportFragmentManager(), fragments);
@@ -146,6 +153,8 @@ public class MainActivity extends BaseActivity {
             mainFragment.getMainData();
         } else if (collectFragment != null && fragments.get(mViewNum) instanceof CollectFragment) {
             collectFragment.getCollectData();
+//        } else if (queryFragment != null && fragments.get(mViewNum) instanceof QueryFragment) {
+//            queryFragment.getQueryData("", "", "", "");
         } else if (personFragment != null && fragments.get(mViewNum) instanceof PersonFragment) {
             personFragment.setPersonData();
         }

@@ -46,6 +46,25 @@
         app:signType="point"
         app:signWidth="@dimen/view_height_8" />
 
+<!--    <com.example.management.widget.AlarmRadioButton-->
+<!--        android:id="@+id/tab_menu_query"-->
+<!--        style="@style/style_main_bottom_bar"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_weight="1"-->
+<!--        android:drawableTop="@drawable/menu_quality_list"-->
+<!--        android:drawablePadding="@dimen/view_height_5"-->
+<!--        android:gravity="center"-->
+<!--        android:text="@string/main_menu_query"-->
+<!--        app:signColor="@color/colorAlarm"-->
+<!--        app:signLocation="right_top"-->
+<!--        app:signMarginBottom="@dimen/view_height_4"-->
+<!--        app:signMarginLeft="@dimen/view_height_20"-->
+<!--        app:signMarginRight="@dimen/view_height_20"-->
+<!--        app:signMarginTop="@dimen/view_height_4"-->
+<!--        app:signType="point"-->
+<!--        app:signWidth="@dimen/view_height_8" />-->
+
     <com.example.management.widget.AlarmRadioButton
         android:id="@+id/tab_menu_person"
         style="@style/style_main_bottom_bar"

@@ -119,14 +119,28 @@
     <include layout="@layout/view_divider_line" />
 
     <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorBgWhite"
         android:padding="@dimen/view_height_10">
 
         <Button
+            android:id="@+id/btn_change"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/view_height_15"
+            android:layout_marginRight="@dimen/view_height_15"
+            android:background="@drawable/shape_btn_normal"
+            android:text="@string/person_change"
+            android:textColor="@color/colorBgWhite"
+            android:textSize="@dimen/text_size_17" />
+
+        <Button
             android:id="@+id/btn_login_out"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/view_height_15"
             android:layout_marginRight="@dimen/view_height_15"

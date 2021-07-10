@@ -47,12 +47,15 @@
     <!-- 主页 -->
     <string name="main_menu_work">首页</string>
     <string name="main_menu_collect">汇总</string>
+    <string name="main_menu_query">查询</string>
     <string name="main_menu_person">个人信息</string>
 
     <!-- 首页 -->
     <string name="main_title">首页</string>
     <string name="main_company">单位名称</string>
-    <string name="main_weigh">累积过磅车次</string>
+    <string name="main_weigh">累计过磅车次</string>
+    <string name="main_sum">累计: </string>
+    <string name="main_data">溯源查询</string>
     <string name="main_num">0</string>
     <string name="main_weigh_day">今日过磅车次</string>
     <string name="main_weigh_month">本月过磅车次</string>
@@ -87,6 +90,37 @@
     <string name="collect_detail_yi">一磅时间:</string>
     <string name="collect_detail_er">二磅时间:</string>
 
+    <!-- 查询 -->
+    <string name="query_title">查询</string>
+    <string name="query_flow">业务类型</string>
+    <string name="query_flow_hint">请输入业务类型</string>
+    <string name="query_start">开始时间</string>
+    <string name="query_start_hint">请选择开始时间</string>
+    <string name="query_end">结束时间</string>
+    <string name="query_end_hint">请选择结束时间</string>
+    <string name="query_truck">车牌号码</string>
+    <string name="query_truck_hint">请输入车牌号码</string>
+    <string name="query_driver">司机姓名</string>
+    <string name="query_material">物料名称</string>
+    <string name="query_net">物料净重</string>
+    <string name="query_deliver">运输单位</string>
+
+    <!-- 查询详情 -->
+    <string name="query_detail_title">详情</string>
+    <string name="query_detail_truck">车牌号码:</string>
+    <string name="query_detail_driver">司机姓名:</string>
+    <string name="query_detail_number">身份证号:</string>
+    <string name="query_detail_flow">业务类型:</string>
+    <string name="query_detail_material">物料名称:</string>
+    <string name="query_detail_net">物料净重:</string>
+    <string name="query_detail_tare">物料皮重:</string>
+    <string name="query_detail_gross">物料毛重:</string>
+    <string name="query_detail_deliver">运输单位:</string>
+    <string name="query_detail_receive">收货单位:</string>
+    <string name="query_detail_create">创建时间:</string>
+    <string name="query_detail_yi">一磅时间:</string>
+    <string name="query_detail_er">二磅时间:</string>
+
     <!-- 个人信息 -->
     <string name="person_title">个人信息</string>
     <string name="person_name">用户姓名</string>
@@ -94,6 +128,20 @@
     <string name="person_company_code">单位编号</string>
     <string name="person_content">备注</string>
     <string name="person_content_hint">暂无信息展示</string>
+    <string name="person_change">修改密码</string>
     <string name="person_login_out">退出</string>
     <string name="person_login_out_hint">确认退出当前用户？</string>
+
+    <!-- 修改密码 -->
+    <string name="pwd_title">修改密码</string>
+    <string name="pwd_old">原始密码:</string>
+    <string name="pwd_new">新的密码:</string>
+    <string name="pwd_confirm">确认密码:</string>
+    <string name="pwd_old_hint">请输入原始密码</string>
+    <string name="pwd_new_hint">请输入新的密码</string>
+    <string name="pwd_confirm_hint">请输入确认密码</string>
+    <string name="pwd_old_error">原始密码输入错误!</string>
+    <string name="pwd_new_error">新密码与确认密码不一致!</string>
+    <string name="pwd_submit">提交</string>
+
 </resources>

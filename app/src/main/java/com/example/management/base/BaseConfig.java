@@ -17,6 +17,9 @@ public class BaseConfig {
     public static final String PARAM_COLLECT = "PARAM_COLLECT";
     public static final String PARAM_COLLECT_DETAIL = "PARAM_COLLECT_DETAIL";
 
+    public static final String PARAM_QUERY = "PARAM_QUERY";
+    public static final String PARAM_QUERY_DETAIL = "PARAM_QUERY_DETAIL";
+
     public static final int RETURN_RESULT_SPLASH = 301;
     public static final int RETURN_RESULT_LOGIN = 302;
     public static final int PARAM_LOGIN_IP = 501;
