@@ -66,6 +66,7 @@ public class CollectDetailAdapter extends BaseAdapter {
             viewHolder.tvCollectSumMaterial = convertView.findViewById(R.id.tv_collect_sum_material);
             viewHolder.tvCollectSumNet = convertView.findViewById(R.id.tv_collect_sum_net);
             viewHolder.tvCollectSumDeliver = convertView.findViewById(R.id.tv_collect_sum_deliver);
+            viewHolder.tvCollectSumCreate = convertView.findViewById(R.id.tv_collect_sum_create);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -77,6 +78,7 @@ public class CollectDetailAdapter extends BaseAdapter {
         viewHolder.tvCollectSumMaterial.setText(collectBean.getMaterielName());
         viewHolder.tvCollectSumNet.setText(String.valueOf(collectBean.getNetWeight()));
         viewHolder.tvCollectSumDeliver.setText(collectBean.getDeliveName());
+        viewHolder.tvCollectSumCreate.setText(collectBean.getCreatDate().replace("T", " ").substring(0, 19));
 
         return convertView;
     }
@@ -87,5 +89,6 @@ public class CollectDetailAdapter extends BaseAdapter {
         TextView tvCollectSumMaterial;
         TextView tvCollectSumNet;
         TextView tvCollectSumDeliver;
+        TextView tvCollectSumCreate;
     }
 }

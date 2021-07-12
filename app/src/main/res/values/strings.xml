@@ -51,7 +51,7 @@
     <string name="main_menu_person">个人信息</string>
 
     <!-- 首页 -->
-    <string name="main_title">首页</string>
+    <string name="main_title">地磅计量查询系统</string>
     <string name="main_company">单位名称</string>
     <string name="main_weigh">累计过磅车次</string>
     <string name="main_sum">累计: </string>
@@ -73,6 +73,7 @@
     <string name="collect_sum_material">物料名称</string>
     <string name="collect_sum_net">物料净重</string>
     <string name="collect_sum_deliver">运输单位</string>
+    <string name="collect_sum_create">创建时间</string>
 
     <!-- 汇总详情 -->
     <string name="collect_detail_title">详情</string>
@@ -104,6 +105,7 @@
     <string name="query_material">物料名称</string>
     <string name="query_net">物料净重</string>
     <string name="query_deliver">运输单位</string>
+    <string name="query_create">创建时间</string>
 
     <!-- 查询详情 -->
     <string name="query_detail_title">详情</string>

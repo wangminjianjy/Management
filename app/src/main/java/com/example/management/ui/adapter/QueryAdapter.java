@@ -65,6 +65,7 @@ public class QueryAdapter extends BaseAdapter {
             viewHolder.tvQueryMaterial = convertView.findViewById(R.id.tv_query_material);
             viewHolder.tvQueryNet = convertView.findViewById(R.id.tv_query_net);
             viewHolder.tvQueryDeliver = convertView.findViewById(R.id.tv_query_deliver);
+            viewHolder.tvQueryCreate = convertView.findViewById(R.id.tv_query_create);
             convertView.setTag(viewHolder);
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
@@ -76,6 +77,7 @@ public class QueryAdapter extends BaseAdapter {
         viewHolder.tvQueryMaterial.setText(collectBean.getMaterielName());
         viewHolder.tvQueryNet.setText(String.valueOf(collectBean.getNetWeight()));
         viewHolder.tvQueryDeliver.setText(collectBean.getDeliveName());
+        viewHolder.tvQueryCreate.setText(collectBean.getCreatDate().replace("T", " ").substring(0, 19));
 
         return convertView;
     }
@@ -86,5 +88,6 @@ public class QueryAdapter extends BaseAdapter {
         TextView tvQueryMaterial;
         TextView tvQueryNet;
         TextView tvQueryDeliver;
+        TextView tvQueryCreate;
     }
 }

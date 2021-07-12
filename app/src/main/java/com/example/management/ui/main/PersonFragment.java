@@ -24,7 +24,6 @@ public class PersonFragment extends BaseFragment {
     private TextView personTitle;
     private TextView personName;
     private TextView personCompanyName;
-    private TextView personCompanyCode;
     private Button changePwd;
     private Button loginOut;
 
@@ -53,7 +52,6 @@ public class PersonFragment extends BaseFragment {
         personTitle = contentView.findViewById(R.id.custom_title);
         personName = contentView.findViewById(R.id.tv_person_name);
         personCompanyName = contentView.findViewById(R.id.tv_person_company);
-        personCompanyCode = contentView.findViewById(R.id.tv_person_company_code);
         changePwd = contentView.findViewById(R.id.btn_change);
         loginOut = contentView.findViewById(R.id.btn_login_out);
     }
@@ -94,9 +92,6 @@ public class PersonFragment extends BaseFragment {
         }
         if (!TextUtils.isEmpty(userBean.getFactoryName())) {
             personCompanyName.setText(userBean.getFactoryName());
-        }
-        if (!TextUtils.isEmpty(userBean.getFactoryCode())) {
-            personCompanyCode.setText(userBean.getFactoryCode());
         }
     }
 

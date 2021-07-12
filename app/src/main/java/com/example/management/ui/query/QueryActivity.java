@@ -92,7 +92,8 @@ public class QueryActivity extends BaseActivity {
 
     @Override
     protected void initData() {
-        queryTitle.setText(getString(R.string.query_title));
+        String title = getIntent().getStringExtra(BaseConfig.PARAM_QUERY);
+        queryTitle.setText(String.format("%s%s", title, getString(R.string.query_title)));
 
         queryList = new ArrayList<>();
         queryAdapter = new QueryAdapter(this);
